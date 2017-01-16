@@ -50,10 +50,10 @@
 </hgroup><article>
 
 <ul class="rollIn">
-<li>从产品角度介绍小程序的特点、属性</li>
-<li>技术上简介小程序的开发框架和开发流程</li>
-<li>把握一下小程序在整个前端生态圈的位置</li>
-<li>基于以上谈谈小程序的前景（自由讨论）</li>
+<li>产品角度介绍小程序的特点、属性</li>
+<li>小程序的开发框架和开发流程</li>
+<li>小程序与其它技术的比较</li>
+<li>谈谈小程序的前景（自由讨论）</li>
 </ul>
 
 </article></section></slide>
@@ -61,17 +61,20 @@
 <h1>demo演示</h1>
 
 </article></section></slide>
+<slide class="slide fill" style="background-image:url('./img/xc-demo2.png')"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>demo演示</h1>
+
+</article></section></slide>
 <slide class="slide hasnote"><aside class="note">
 <section>
 <h2><a href="http://jiezhao.baijia.baidu.com/article/737795" target="_blank">微信公开课pro</a></h2>
-<p>为什么~
-这个可能非常难想，我个人脑海里会浮现出一下，可能在手机之后，会有类似眼镜之类的设备，变得非常智能化的时候，可能整个PC智能系统藏在眼镜里，屏幕可能比现在还要大，可能十年以后可以投影到我们的视网膜里，通过眼镜就可以看到，日常可能带着眼镜到处跑，大家可以想一下，到时候会是什么系统运营。
+<p>为什么~</p>
+<div style="font-size:20px;">张小龙畅想了一下十年以后的智能设备的形式,可能在手机之后，会有类似眼镜之类的设备，变得非常智能化的时候，可能整个PC智能系统藏在眼镜里，屏幕可能比现在还要大，可能十年以后可以投影到我们的视网膜里，通过眼镜就可以看到，日常可能带着眼镜到处跑.
 那个时候应用程序应该跟现在不一样，我希望到时候眼镜里不需要现在这样要安装应用程序的过程，希望我眼镜看到哪里，相关的应用程序就在哪里。
-举个例子，比如我看到房子里的一盏灯，我透过智能眼镜，看到灯的时候，灯的上方就可能像现在AR一样出现一个虚拟的开关，这个开关是出现在真是物品上的虚拟程序。
+举个例子，比如我看到房子里的一盏灯，我透过智能眼镜，看到灯的时候，灯的上方就可能像现在AR一样出现一个虚拟的开关，这个开关是出现在真实物品上的虚拟程序。
 同样可以想象非常多的场景。但你走到公园门口的时候，可能门口会自动出现门票的程序，也就是当你看到任何实物的时候，这个实物背后的应用程序会自动浮现出来，然后通过眼镜或者别的方法启动应用，比如进行购票。
 在未来智能眼镜里，你会发现应用程序已经是完全不同的形态，跟我们现在手机里的程序完全不一样，是真正所见即所得，这不是PC时代UI画图的所见即所得，而是我们见到的具体事务，就包含了具体信息、对信息的处理在里面。
-他认为应用程序应该是无处不在，又是随时访问的状态。</p>
-
+他认为应用程序应该是无处不在，又是随时访问的状态。</div>
 </section>
 </aside><section class="slide-wrapper"><article class="flexbox vleft">
 <h1>微信为什么会推出这个产品？</h1>
@@ -96,23 +99,21 @@ I think：小程序本质还是一套前端框架，微信团队
 （3）实现了一套类似vue、react一样的mvvm的框架 —— 微信小程序
 官方说明：小程序开发框架的目标是通过尽可能简单、高效的方式让开发者可以在微信中开发具有原生 APP 体验的服务。
 声明式语言
-虚拟dom：以某种方式在内存中存储我们的 DOM 树</p>
+虚拟dom：以某种方式在内存中存储我们的 DOM 树
+AndroidManifest.xml</p>
 
 </section>
 </aside><section class="slide-wrapper"><article class="flexbox vleft">
 <h1>小程序如何开发? </h1>
 <h2>(1)技术语言：wxml 、wxss、js</h2>
 <h2>(2)微信提供了开发框架MINA</h2>
-<h2>(3)相似的前端开发框架：Angular、React、Vue</h2>
-<ul class="rollIn">
+<h2>(3)已有的前端开发框架：Angular、React、Vue</h2>
+<ul>
 <li>模板DSL</li>
 <li>数据绑定: service 到view的单向数据流</li>
 <li>事件系统: 实现view到service的通信</li>
-<li>组件化：<blockquote>
-<p>angular、react是封装一个类，vue是单文件，
-<a href="./img/xc-component.png">天然的组件</a></p>
-</blockquote>
-</li>
+<li>组件化：
+ <a href="./img/xc-component.png">天然的组件</a></li>
 <li>生命周期钩子</li>
 </ul>
 
@@ -128,7 +129,7 @@ I think：小程序本质还是一套前端框架，微信团队
 </hgroup><article>
 
 <div class="columns1">
-    <img src="./img/xc-service.png" height="450">
+    <img style="border-radius:10px;" src="./img/xc-service.png" height="450">
 </div>
 </article></section></slide>
 <slide class="slide hasnote"><aside class="note">
@@ -142,12 +143,13 @@ I think：小程序本质还是一套前端框架，微信团队
 
 </hgroup><article>
 
-<div class="columns2">
-    <img src="./img/xc-xc.png" height="450">
-    <img src="./img/xc-ionic.png" height="450">
+<div class="rows2">
+    <img style="border-radius:10px;" src="./img/xc-xc.png" height="280" width="900">
+    <br/><br/>
+    <img style="border-radius:10px;" src="./img/xc-ionic.png" height="280" width="900">
 </div>
 </article></section></slide>
-<slide class="slide hasnote"><aside class="note">
+<slide class="slide"   data-on-build="Slide.magic" data-on-enter="Slide.magic.init"><aside class="note">
 <section>
 <div style="overflow-y:scroll;font-size:18px;">
 webApp:H5页面 用web技术（js、html、css）构建的应用程序
@@ -178,46 +180,68 @@ webApp:
       ->H5页面是运行在其他的宿主环境中的(不是手机操作系统),所以想要操作手机内部的软件或者硬件,需要看一下宿主环境是否支持
       ->虽然说现在有一些浏览器都支持,但是操作性能非常不好(native.js);
 <br/>
-为什么说基本是Web App：
-NavigationBar是原生，TabBar是原生，页面内容是WebView展现的
-<br/>
-（1）操作系统本身就支持web应用 —— 满城尽带黄金甲
-（2）浏览器或者其它类似的产品中包含支持web应用的能力，操作系统看不到web应用的存在；
-        web应用对操作系统而言是透明的，它看到的多个运行环境中的实例。
-        —— 哥牛逼，哥帮你
-（3）web应用本身打包成本地应用 —— 套壳上市
-<br/>
 **技术地位**整体把握**
 PWA：https://yanshuo.io/assets/player/?deck=5753088f79bc440063aa84f0
 </div>
 </section>
 </aside><section class="slide-wrapper"><article class="flexbox vleft">
-<h1>小程序与以往的技术有什么区别？ </h1>
-<ul class="rollIn">
-<li>Web App 、hybrid App、  native App</li>
-<li>一次开发，到处运行</li>
-<li class="fadeIn">微信近似于把自己打造成一个web应用平台。Weixin world web<h2><span class="yellow">Web应用平台的技术实现方案</span></h2>
-</li>
-<li>(1)firefox OS</li>
-<li>(2)Chromium的桌面版</li>
-<li class="fadeIn">(3)Cordova框架<h3><div class="red">他们都不是很成熟</div></h3>
-</li>
-</ul>
-
-</article></section></slide>
-<slide class="slide hasnote"><aside class="note">
-<section>
-<p>（1）前身是phonegap（2）依赖操作系统网页渲染模块的能力，webview</p>
-
-</section>
-</aside><section class="slide-wrapper"><article class="flexbox vleft">
-<h1>Cordova项目 </h1>
+<h1>小程序与其它技术的区别？ </h1>
+<div class="magic"><div class="magicItem current pagedown"  data-transition="cover-circle"><article>
+<div class="magic-wrapper">
+<article>
+<h3><span class="yellow">小程序与H5页面的区别？</span></h3>
+<p>(1) H5页面是小程序的组成部分，实现业务需求。
+<br/>(2) 应用程序本身还需要的能力（微信实现）：</p>
 <ul>
-<li>使用cordova 的打包工具将web应用打包成一个个同系统相关的本地可执行文件</li>
-<li>打包演示
-<img src="./img/xc-package.png"></img></li>
+<li>访问设备的能力</li>
+<li>离线存储的能力</li>
+<li>应用程序具有生命周期
+ <br/>启动、挂起、恢复和销毁等状态</li>
 </ul>
 
+</article>
+</div>
+</article></div>
+<div class="magicItem next pagedown"  data-transition="cover-circle"><article>
+<div class="magic-wrapper">
+<article>
+<h3><span class="yellow">小程序与本地应用的区别？</span></h3>
+<ul>
+<li>小程序是使用web技术开发的应用</li>
+<li>小程序是无需安装、无需卸载<h3><div class="red">微信期望于把自己打造成一个应用平台。</div></h3>
+<h3><div class="red">web技术恰好是一种契合张小龙“用完即走”产品理念的解决方案。</div></h3>
+<h3><div class="red" style="text-decoration:underline">Weixin world web。</div></h3>
+</li>
+</ul>
+
+</article>
+</div>
+</article></div>
+<div class="magicItem far-next pagedown"  data-transition="cover-circle"><article>
+<div class="magic-wrapper">
+<article>
+<h3><div class="yellow">Web应用平台的技术方案？</div></h3>
+<ul>
+<li>(1)<strong><em>×</em></strong>web操作系统: firefox OS</li>
+<li>(2)<strong><em>√</em></strong>浏览器或者其它类似的产品包含支持web应用的能力:   <div style="margin-left:38px;">Chromium的桌面版、Google PWA技术</div></li>
+<li>(3)<strong><em><em>?</em></em></strong>以独立的框架存在于传统的操作系统: web应用本身会打包成本地应用</li>
+</ul>
+
+</article>
+</div>
+</article></div>
+<div class="magicItem "  data-transition="cover-circle"><article>
+<div class="magic-wrapper">
+<article>
+<ul>
+<li>使用cordova 的打包工具将web应用打包成一个个同系统相关的本地可执行文件
+<a href="./img/ionic.txt">打包演示</a>
+<img style="border-radius:50px;" src="./img/cordova.png"></img></li>
+</ul>
+
+</article>
+</div>
+</article></div></div>
 </article></section></slide>
 <slide class="slide hasnote"><aside class="note">
 <section>
@@ -270,13 +294,6 @@ PWA：https://yanshuo.io/assets/player/?deck=5753088f79bc440063aa84f0
 <slide class="slide"><section class="slide-wrapper"><article>
 <p><span class="text-success" style="font-size:60px;">Thank you！</span></p>
 
-</article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><hgroup>
-<h2>百度查询</h2>
-
-</hgroup><article>
-
-<iframe data-src="http://www.baidu.com" src="about:blank;"></iframe>
 </article></section></slide>
         
 
