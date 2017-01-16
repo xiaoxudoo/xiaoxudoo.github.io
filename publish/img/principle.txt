@@ -1,0 +1,20 @@
+（1）当开发者写好了wxml、wxss、js时打包上传到微信服务器，
+（2）微信服务器可能做一些预编译的工作，
+（3）用户用的时候，先下载小程序包，微信解析编译结果。
+（4）打开微信开发者工具，在console下输入openvendor(),会打开一个本地目录，有四个文件。
+（5）./wcc.exe -d /c/Users/xiaox/Desktop/manfei/pages/list/list.wxml > list.js
+（6）生产了一个$gwx的function，这个function用于将wxml节点编译成virtual dom对象
+（7）trans/transWxmlToJs.js
+    <script>
+        
+      document.dispatchEvent(new CustomEvent("generateFuncReady", {
+          
+        detail: {
+            
+          generateFunc: $gwx('./${q}')
+          
+        }
+        
+      }))
+     
+    </script>
